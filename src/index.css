@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #000;
+}
+@keyframes slide {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 10s linear infinite;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
